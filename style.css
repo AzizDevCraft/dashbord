@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:#fff;
+}
+
+.profile {
+    display: none;
+}
+
+body {
+    background: #001;
+}
+
+.menu {
+    background: #123;
+    width: 260px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.menu ul li a {
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.menu ul li a:hover {
+    background: #ffffff4b;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    list-style: none;
+}
+
+.log-out {
+    position: relative;
+    top: 180px;
+}
