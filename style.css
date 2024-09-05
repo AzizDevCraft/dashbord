@@ -2,46 +2,126 @@
     margin: 0;
     padding: 0;
     color:#fff;
-}
-
-.profile {
-    display: none;
+    font-family: sans-serif;
+    font-size: 20px;
 }
 
 body {
     background: #001;
+    display: flex;
 }
 
 .menu {
     background: #123;
-    width: 260px;
+    width: 60px;
     height: 100vh;
     padding: 20px;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.menu ul li a {
+.menu:hover {
+    width: 260px;
+}
+
+.image-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid 3px white;
+    flex-shrink: 0;
+}
+
+.image-box img {
+    width: 100%;
+}
+
+.profile {
     display: flex;
-    gap: 30px;
-    font-size: 30px;
-    text-decoration: none;
     align-items: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    text-transform: capitalize;
+}
+
+ul {
     list-style: none;
+    height: 95%;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
     padding: 10px;
-    border-radius: 15px;
-}
-
-.menu ul li a:hover {
-    background: #ffffff4b;
-}
-
-.menu ul {
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    list-style: none;
+    gap: 40px;
+    align-items: center;
+    transition: .5s;
+}
+
+ul li a:hover, .first, .box:hover {
+    background: #ffffff55;
+}
+
+ul li a i {
+    font-size: 30px;
 }
 
 .log-out {
-    position: relative;
-    top: 180px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
+
+.log-out a {
+    background: #a00;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.content .titre {
+    background-color: #3f3fe7da;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .titre p {
+    text-transform: capitalize;
+}
+
+.data-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    background: #123;
+    height: 150px;
+    width: 150px;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+
+.box i, .box data {
+    font-size: 40px;
+}
+
