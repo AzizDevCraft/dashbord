@@ -18,6 +18,9 @@ body {
     padding: 20px;
     overflow: hidden;
     transition: .5s;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
 }
 
 .menu:hover {
@@ -66,7 +69,7 @@ ul li a {
     transition: .5s;
 }
 
-ul li a:hover, .first, .box:hover {
+ul li a:hover, .first, .box:hover, td:hover {
     background: #ffffff55;
 }
 
@@ -87,6 +90,7 @@ ul li a i {
 .content {
     width: 100%;
     margin: 10px;
+    height:fit-content;
 }
 
 .content .titre {
@@ -106,18 +110,19 @@ ul li a i {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .box {
     background: #123;
     height: 150px;
-    width: 150px;
+    flex-basis: 150px;
     flex-grow: 1;
     margin: 10px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     transition: .5s;
 }
 
@@ -125,3 +130,18 @@ ul li a i {
     font-size: 40px;
 }
 
+table {
+    width: 100% ;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+th, td {
+    border-radius: 10px;
+    background: #123;
+    height: 40px;
+}
+
+th {
+    background: #3f3fe7da;
+}
